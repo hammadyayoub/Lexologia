@@ -1,0 +1,112 @@
+<style>
+        
+        a {
+            color: white;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #191050 0%, #39D77E 100%);
+        }
+        .initiative-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        .nav-active {
+            transform: translateX(0%);
+        }
+        #navbar {
+            background-image: linear-gradient(to left, #39D77E , #191050);
+            position:fixed;
+            background-size: cover;
+        }
+        #nav-bar {
+            backdrop-filter: blur(10px); /* Adds the glass blur effect */
+            background-color: rgba(0, 0, 0, 0.509); /* Makes the background semi-transparent */
+            color: white; /* Text color, adjust as needed */
+            padding: 15px;
+            position: fixed; /* Keeps the navbar at the top of the page */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full-width navbar */
+            z-index: 1000;
+        }
+        
+        .footer-section {
+            background-image: url('../image/footer.jpg'); /* Replace with the correct path to your image */
+            background-size: cover; /* Ensures the image covers the entire footer */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            position: relative; /* Enables layering for the overlay */
+            color: white; /* Sets default text color for readability */
+        }
+        
+        .footer-section::before {
+            content: ""; /* Creates a dark overlay */
+            position: absolute; /* Stretches the overlay to cover the footer */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8); /* Stronger semi-transparent black overlay */
+            z-index: 1; /* Positions the overlay behind the content */
+        }
+        
+        .footer-section .max-w-7xl {
+            position: relative; /* Ensures the content stays above the overlay */
+            z-index: 2; /* Places content above the overlay */
+            color: white; /* Keeps text readable */
+        }
+        
+        .footer-section p, 
+        .footer-section h4, 
+        .footer-section a {
+            color: white; /* Ensures all text elements are white for better visibility */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text pop against the background */
+        }
+        
+        .footer-section a:hover {
+            color: #39D77E; /* Adds a distinct hover effect for links */
+        }
+        
+        .footer-section .logo-footer {
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7)); /* Adds a shadow to the logo for better contrast */
+        }
+        
+        .logo-footer {
+            position: center;
+            padding-left: 15%;
+            margin-left: 10px;
+        }
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #39D77E;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .nav-link:hover {
+            color: #39D77E;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .navbar-container {
+            display: flex;
+            justify-content: center; /* Centers items horizontally */
+            align-items: center; /* Aligns items vertically */
+        }
+        
+        
+        
+
+    </style>
