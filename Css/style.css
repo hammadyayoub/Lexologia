@@ -105,7 +105,13 @@
             justify-content: center; /* Centers items horizontally */
             align-items: center; /* Aligns items vertically */
         }
-        
+        #info-bar {
+        z-index: 50; /* Ensure the info-bar is above other elements */
+    }
+    #navbar {
+        top: 2.5rem; /* Push navbar down to avoid overlap with info-bar */
+        z-index: 40; /* Ensure navbar appears below the info-bar */
+    }
         
         
 
