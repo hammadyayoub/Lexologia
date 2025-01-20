@@ -113,7 +113,7 @@
         z-index: 40; /* Ensure navbar appears below the info-bar */
     }
         
-        /* Initial "bullet" style */
+    /* Initial "bullet" style */
 #chatbot-container {
   position: fixed;
   bottom: 20px; /* Distance from bottom */
@@ -129,14 +129,14 @@
   transition: all 0.3s ease; /* Smooth transitions */
 }
 
-/* Expanded style for chat window */
+/* Expanded style for chat window in phone format */
 #chatbot-container.expanded {
-  width: 100%; /* Fullscreen width */
-  height: 100%; /* Fullscreen height */
+  width: 375px; /* Phone screen width (example) */
+  height: 667px; /* Phone screen height (example) */
   bottom: 0; /* Align to bottom */
   right: 0; /* Align to right */
-  border-radius: 0; /* Removes circular shape */
-  background-color: #ffffff; /* Optional background for chat */
+  border-radius: 15px; /* Slightly rounded corners for phone format */
+  background-color: #ffffff; /* Optional background color */
 }
 
 /* Adjusting the chatbot embed */
@@ -145,6 +145,7 @@ zapier-interfaces-chatbot-embed {
   height: 100%; /* Fills container height */
   transition: all 0.3s ease;
 }
+
 
 
     </style>
