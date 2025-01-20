@@ -9,11 +9,23 @@
     <link rel="icon" href="image/SVG/fav.svg" type="image/x-icon">
     <link rel="shortcut icon" href="image/SVG/fav.svg" type="image/x-icon">
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="script" href="style.js">
     
 
 </head>
 <body class="font-sans">
     
+<div id="chatbot-container">
+  <script 
+    async 
+    type="module" 
+    src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js">
+  </script>
+  <zapier-interfaces-chatbot-embed 
+    is-popup="true" 
+    chatbot-id="cm65b857m001gopvhh93wsmw8">
+  </zapier-interfaces-chatbot-embed>
+</div>
 
     <!-- Navigation -->
     <nav id="navbar" class="nnavbar-container bg-white shadow-lg fixed w-full z-40">
