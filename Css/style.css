@@ -131,8 +131,8 @@
 
 /* Expanded style for chat window in phone format */
 #chatbot-container.expanded {
-  width: 375px; /* Phone screen width (example) */
-  height: 667px; /* Phone screen height (example) */
+  width: 100%; /* Phone screen width (example) */
+  height: 100%; /* Phone screen height (example) */
   bottom: 0; /* Align to bottom */
   right: 0; /* Align to right */
   border-radius: 15px; /* Slightly rounded corners for phone format */
@@ -141,8 +141,8 @@
 
 /* Adjusting the chatbot embed */
 zapier-interfaces-chatbot-embed {
-  width: 375px; /* Fills container width */
-  height: 667px; /* Fills container height */
+  width: 100%; /* Fills container width */
+  height: 100%; /* Fills container height */
   transition: all 0.2s ease;
 }
 
