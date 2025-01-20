@@ -9,11 +9,12 @@
     <link rel="icon" href="image/SVG/fav.svg" type="image/x-icon">
     <link rel="shortcut icon" href="image/SVG/fav.svg" type="image/x-icon">
     <link rel="stylesheet" href="Css/style.css">
-    <link rel="script" href="style.js">
+   <
     
 
 </head>
 <body class="font-sans">
+    <!-- Chatbot -->
     <div id="chatbot-container">
   <script 
     async 
@@ -301,5 +302,13 @@
             mobileMenu.classList.add('hidden');
         }
     });
+    // Select the chatbot container
+const chatbotContainer = document.getElementById('chatbot-container');
+
+// Add click event listener to toggle expanded state
+chatbotContainer.addEventListener('click', () => {
+  chatbotContainer.classList.toggle('expanded');
+});
+
     </script>
    </html>
