@@ -141,9 +141,9 @@
 
 /* Adjusting the chatbot embed */
 zapier-interfaces-chatbot-embed {
-  width: 100%; /* Fills container width */
-  height: 100%; /* Fills container height */
-  transition: all 0.3s ease;
+  width: 375px; /* Fills container width */
+  height: 667px; /* Fills container height */
+  transition: all 0.2s ease;
 }
 
 
